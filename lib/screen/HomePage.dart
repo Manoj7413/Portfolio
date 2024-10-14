@@ -59,16 +59,11 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     height: 45,
                     width: 120,
-                    child: FlatButton(
-                      color: Color(0xff48E1EC),
-                      onPressed: () { 
+                    child: TextButton(
+                      onPressed: () {
                         method.launchURL(
                                     "https://www.linkedin.com/in/akshay-jadhav-90ba81134/");
                        },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6.0),
-                          side: BorderSide(color: Color(0xff48E1EC))
-                        ),
                       child:Text("Resume",style:TextStyle(fontWeight: FontWeight.bold,fontSize: 20.0),),
                     ),
                   ),

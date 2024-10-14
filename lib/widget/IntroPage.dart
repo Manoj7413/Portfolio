@@ -30,16 +30,11 @@ class _IntroPageState extends State<IntroPage> {
               SizedBox(
                     height: 65,
                     width: 200,
-                    child: FlatButton(
-                      color: Color(0xff0A192F),
-                      onPressed: () { 
+                    child: TextButton(
+                      onPressed: () {
                         method.launchURL(
                                     "https://www.linkedin.com/in/akshay-jadhav-90ba81134/");
                        },
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6.0),
-                          side: BorderSide(color: Color(0xff48E1EC))
-                        ),
                       child:Text("Get In Touch",style:TextStyle(color: Color(0xff48E1EC),fontWeight: FontWeight.bold,fontSize: 20.0),),
                     ),
                   ),
