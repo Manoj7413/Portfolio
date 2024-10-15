@@ -27,6 +27,13 @@ class _ProjectWidgetState extends State<ProjectWidget> {
             left: 40.0,
             top: 40.0,
             child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [ Colors.transparent,Color(0xff1e1f22)], // Replace with your colors
+                  begin: Alignment.centerRight,
+                  end: Alignment.centerLeft,
+                ),
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:[
@@ -100,6 +107,13 @@ class _ProjectWidget2State extends State<ProjectWidget2> {
             right: 40.0,
             top: 40.0,
             child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color(0xff1e1f22),Colors.transparent], // Replace with your colors
+                  begin: Alignment.centerRight,
+                  end: Alignment.centerLeft,
+                ),
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children:[

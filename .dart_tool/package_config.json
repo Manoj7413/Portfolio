@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "animated_background",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/animated_background-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
@@ -30,6 +36,12 @@
       "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "csslib",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "cupertino_icons",
@@ -66,6 +78,12 @@
       "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/font_awesome_flutter-10.7.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "html",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "leak_tracker",
@@ -218,6 +236,36 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "video_player",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "video_player_android",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "video_player_avfoundation",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.6.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "video_player_platform_interface",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "video_player_web",
+      "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "vm_service",
       "rootUri": "file:///C:/Users/kumha/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.1",
       "packageUri": "lib/",
@@ -236,7 +284,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-10-14T16:50:29.345769Z",
+  "generated": "2024-10-15T16:06:47.514509Z",
   "generator": "pub",
   "generatorVersion": "3.4.4",
   "flutterRoot": "file:///C:/flutter",
