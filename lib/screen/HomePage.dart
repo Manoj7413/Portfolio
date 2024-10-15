@@ -19,23 +19,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Method method=new Method();
 
-  late final VideoPlayerController videoController;
-  @override
-  void initState() {
-    videoController = VideoPlayerController.asset('assests/videos/video.mp4')
-      ..initialize().then((_) {
-        videoController.play();
-        videoController.setLooping(true);
-      });
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    videoController.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

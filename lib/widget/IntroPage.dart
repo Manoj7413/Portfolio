@@ -54,7 +54,7 @@ class _IntroPageState extends State<IntroPage> {
                         boxShadow: [BoxShadow(color:  Colors.blueGrey.shade100,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
                       ),
                       child: Image.asset(
-                        "assests/facebook.png",
+                        "assets/facebook.png",
                         width: max(MediaQuery.of(context).size.width*0.03,40),
                         height: max(MediaQuery.of(context).size.width*0.03,40),
                         fit: BoxFit.cover,
@@ -78,7 +78,7 @@ class _IntroPageState extends State<IntroPage> {
                   child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
                     height: max(MediaQuery.of(context).size.width*0.03,40),
-                    image: AssetImage("assests/github.png"),
+                    image: AssetImage("assets/github.png"),
                     fit: BoxFit.cover,
                   ),
                   ),
@@ -99,7 +99,7 @@ class _IntroPageState extends State<IntroPage> {
                   child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
                     height: max(MediaQuery.of(context).size.width*0.03,40),
-                    image: AssetImage("assests/hackerrank.png"),
+                    image: AssetImage("assets/hackerrank.png"),
                     fit: BoxFit.cover,
                   ),
                   ),
@@ -120,7 +120,7 @@ class _IntroPageState extends State<IntroPage> {
                   child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
                     height: max(MediaQuery.of(context).size.width*0.03,40),
-                    image: AssetImage("assests/linkedin.png"),
+                    image: AssetImage("assets/linkedin.png"),
                     fit: BoxFit.cover,
                   ),
                   ),

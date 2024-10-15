@@ -33,7 +33,7 @@ class _AboutPageState extends State<AboutPage> {
                ),
                Image(
                  width:MediaQuery.of(context).size.width*0.30,
-                 image: AssetImage("assests/mypic.png"),
+                 image: AssetImage("assets/mypic.png"),
                  fit: BoxFit.cover,
                )
              ],
@@ -43,7 +43,7 @@ class _AboutPageState extends State<AboutPage> {
             SizedBox(height: 20.0,),
             Image(
               height: scwidth/1.5,
-              image: AssetImage("assests/skills.png"),
+              image: AssetImage("assets/skills.png"),
               fit: BoxFit.cover,
             ),
          ],

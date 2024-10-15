@@ -19,7 +19,7 @@ class _ProjectWidgetState extends State<ProjectWidget> {
             right: 40.0,
             child: Image(
               height: 550,
-            image: AssetImage("assests/${widget.imageurl}"),
+            image: AssetImage("assets/${widget.imageurl}"),
             fit: BoxFit.cover,
           ),
         ),
@@ -67,7 +67,7 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                   SizedBox(height: 20.0,),
                   Image(
                   height: 60,
-                  image: AssetImage("assests/github.png"),
+                  image: AssetImage("assets/github.png"),
                   fit: BoxFit.cover,
                 ),
                 ],
@@ -99,7 +99,7 @@ class _ProjectWidget2State extends State<ProjectWidget2> {
             left: 40.0,
             child: Image(
               height: 550,
-            image: AssetImage("assests/${widget.imageurl}"),
+            image: AssetImage("assets/${widget.imageurl}"),
             fit: BoxFit.cover,
           ),
         ),
@@ -147,7 +147,7 @@ class _ProjectWidget2State extends State<ProjectWidget2> {
                   SizedBox(height: 20.0,),
                   Image(
                   height: 60,
-                  image: AssetImage("assests/github.png"),
+                  image: AssetImage("assets/github.png"),
                   fit: BoxFit.cover,
                 ),
                 ],
