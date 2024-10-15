@@ -66,7 +66,7 @@ class _IntroPageState extends State<IntroPage> {
                 GestureDetector(
                   onTap: (){
                     method.launchURL(
-                        "https://github.com/Akshay0701");
+                        "https://github.com/Manoj7413");
                   },
                   child: Container(
                     padding: EdgeInsets.all(5),
@@ -108,7 +108,7 @@ class _IntroPageState extends State<IntroPage> {
                 GestureDetector(
                   onTap: (){
                     method.launchURL(
-                        "https://www.linkedin.com/in/akshay-jadhav-90ba81134/");
+                        "https://www.linkedin.com/in/manoj-kumhar-472321261/");
                   },
                   child: Container(
                     padding: EdgeInsets.all(5),
