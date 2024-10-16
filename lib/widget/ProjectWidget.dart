@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../model/Method.dart';
+
 
 class ProjectWidget extends StatefulWidget {
-  final String imageurl,tech,desc,title;
-  ProjectWidget(this.desc,this.imageurl,this.tech,this.title);
+  final String imageurl,tech,desc,title,link;
+  ProjectWidget(this.desc,this.imageurl,this.tech,this.title,this.link);
   @override
   _ProjectWidgetState createState() => _ProjectWidgetState();
 }
@@ -11,6 +13,7 @@ class ProjectWidget extends StatefulWidget {
 class _ProjectWidgetState extends State<ProjectWidget> {
   @override
   Widget build(BuildContext context) {
+    Method method=new Method();
     return Container(
       height:MediaQuery.of(context).size.height*0.8,
       child: Stack(
@@ -18,7 +21,7 @@ class _ProjectWidgetState extends State<ProjectWidget> {
            Positioned(
             right: 40.0,
             child: Image(
-              height: 550,
+              height: 500,
             image: AssetImage("assets/${widget.imageurl}"),
             fit: BoxFit.cover,
           ),
@@ -65,11 +68,16 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                     child: Text(widget.tech,style:TextStyle(color: Colors.white,fontSize:20.0,),),
                   ),
                   SizedBox(height: 20.0,),
-                  Image(
-                  height: 60,
-                  image: AssetImage("assets/github.png"),
-                  fit: BoxFit.cover,
-                ),
+                  InkWell(
+                    onTap: (){
+                      method.launchURL(widget.link);
+                    },
+                    child: Image(
+                    height: 60,
+                    image: AssetImage("assets/github.png"),
+                    fit: BoxFit.cover,
+                                    ),
+                  ),
                 ],
               ),
             ),
@@ -82,8 +90,8 @@ class _ProjectWidgetState extends State<ProjectWidget> {
 }
 
 class ProjectWidget2 extends StatefulWidget {
-  final String imageurl,tech,desc,title;
-  ProjectWidget2(this.desc,this.imageurl,this.tech,this.title);
+  final String imageurl,tech,desc,title,link;
+  ProjectWidget2(this.desc,this.imageurl,this.tech,this.title,this.link);
   @override
   _ProjectWidget2State createState() => _ProjectWidget2State();
 }
@@ -91,6 +99,7 @@ class ProjectWidget2 extends StatefulWidget {
 class _ProjectWidget2State extends State<ProjectWidget2> {
   @override
   Widget build(BuildContext context) {
+    Method method=new Method();
    return Container(
       height:MediaQuery.of(context).size.height*0.8,
       child: Stack(
@@ -98,7 +107,7 @@ class _ProjectWidget2State extends State<ProjectWidget2> {
            Positioned(
             left: 40.0,
             child: Image(
-              height: 550,
+              height: 500,
             image: AssetImage("assets/${widget.imageurl}"),
             fit: BoxFit.cover,
           ),
@@ -145,11 +154,16 @@ class _ProjectWidget2State extends State<ProjectWidget2> {
                     child: Text(widget.tech,style:TextStyle(color: Colors.white,fontSize:20.0,),),
                   ),
                   SizedBox(height: 20.0,),
-                  Image(
-                  height: 60,
-                  image: AssetImage("assets/github.png"),
-                  fit: BoxFit.cover,
-                ),
+                  InkWell(
+                    onTap: (){
+                      method.launchURL(widget.link);
+                    },
+                    child: Image(
+                    height: 60,
+                    image: AssetImage("assets/github.png"),
+                    fit: BoxFit.cover,
+                                    ),
+                  ),
                 ],
               ),
             ),

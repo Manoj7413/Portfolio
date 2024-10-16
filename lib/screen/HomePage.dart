@@ -11,6 +11,8 @@ import 'package:portfolio/widget/ProjectPage.dart';
 import 'package:portfolio/widget/ProjectWidget.dart';
 import 'package:video_player/video_player.dart';
 
+import '../widget/Carosel_Slider.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -26,14 +28,16 @@ class _HomePageState extends State<HomePage> {
         children: [
           Container(
             decoration: BoxDecoration(
+              color: Colors.black,
               image: DecorationImage(
-                repeat: ImageRepeat.repeat,
-                // fit: BoxFit.cover,
-                image:  NetworkImage('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXRqNjZ5djJlcWM2eW80eTNncnB0MHB4MDIzMHlyOWNwd2I2YmJsYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IgN8YKRhByRBzMI/giphy.gif'),
+                // repeat: ImageRepeat.repeat,
+                scale: 2,
+                alignment: Alignment.center,
+                image:  NetworkImage('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWUxNmt4Z2NuN29mdmd6ejFobTl5cDNyazQxcDl3emR1b255Nmp4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7WIB00yXujVt4WEo/giphy-downsized-large.gif'),
               ),
             ),
             child: Container(
-              color: Colors.black.withOpacity(0.1), // Adjust opacity to blend the image edges subtly
+              color: Colors.black.withOpacity(0.1),
             ),
           ),
           SingleChildScrollView(
@@ -43,11 +47,11 @@ class _HomePageState extends State<HomePage> {
                   IntroPage(),
                   ClipRRect(
                     child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 10,sigmaY: 10),
+                      filter: ImageFilter.blur(sigmaX: 5,sigmaY: 5),
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: Colors.white.withOpacity(0.05),
+                          color: Colors.white.withOpacity(0.08),
                         ),
                         child: Column(
                           children: [
@@ -57,18 +61,22 @@ class _HomePageState extends State<HomePage> {
                               child: Text('My Projects',style: TextStyle(color: Color(0xff48E1EC),fontWeight: FontWeight.bold,fontSize: 45.0),),
                             ),
                             Padding(
-                              padding:  EdgeInsets.fromLTRB(50.0, 100.0, 0.0,0.0),
-                              child:  ProjectWidget("Movie Streaming Application Build With Flutter And Firebase (Netflix Clone)","project.png","Flutter Dart Firebase","ScreenTime"),
-                            ),
-
-                            Padding(
-                              padding:  EdgeInsets.fromLTRB(50.0, 100.0, 0.0,0.0),
-                              child:  ProjectWidget2("Social Media Application Builded With Android Studio And Firebase(Backend)","project2.png","Android Studio Java Firebase","PinGo"),
+                              padding:  EdgeInsets.fromLTRB(0.0, 100.0, 50.0,0.0),
+                              child:  ProjectWidget("Movie Streaming Application Build With Flutter And Firebase (Looking like Netflix)","project.png","Flutter Dart Firebase","ScreenTime","https://github.com/Manoj7413/Movie_App"),
                             ),
                             Padding(
                               padding:  EdgeInsets.fromLTRB(50.0, 100.0, 0.0,0.0),
-                              child:  ProjectWidget("NetFlix Mobile And Web Ui Clone Builded With Flutter","project3.png","Flutter Dart ","NetFlix UI"),
+                              child:  ProjectWidget2("Portfolio Website Builded With Android Studio And Firebase","project13.jpg","Android Studio Dart Firebase","Portfolio"),
                             ),
+                            Padding(
+                              padding:  EdgeInsets.fromLTRB(0.0, 100.0, 50.0,0.0),
+                              child:  ProjectWidget("Build A Breakfast App With Flutter","project14.jpg","Flutter Dart","Break Fast App UI","https://github.com/Manoj7413/Breakfast_app"),
+                            ),
+                            Padding(
+                              padding:  EdgeInsets.fromLTRB(50.0, 25.0, 50.0,20.0),
+                              child: Text('Certificates',style: TextStyle(color: Color(0xff48E1EC),fontWeight: FontWeight.bold,fontSize: 45.0),),
+                            ),
+                            MySlider(),
                             FooterPage(),
                           ],
                         ),

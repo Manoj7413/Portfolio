@@ -1,7 +1,8 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/model/Method.dart';
+
+
 
 class IntroPage extends StatefulWidget {
   @override
@@ -17,7 +18,7 @@ class _IntroPageState extends State<IntroPage> {
     bool isHovered = false;
     return Container(
       height:MediaQuery.of(context).size.height,
-      padding: EdgeInsets.fromLTRB(50.0, 100.0, 60.0,0.0),
+      padding: EdgeInsets.fromLTRB(30.0, 100.0, 30.0,0.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -51,7 +52,7 @@ class _IntroPageState extends State<IntroPage> {
                       decoration: BoxDecoration(
                         border: Border.all(color: Colors.white30),
                         borderRadius: BorderRadius.circular(50),
-                        boxShadow: [BoxShadow(color:  Colors.blueGrey.shade100,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
+                        boxShadow: [BoxShadow(color:  Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
                       ),
                       child: Image.asset(
                         "assets/facebook.png",
@@ -73,7 +74,7 @@ class _IntroPageState extends State<IntroPage> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50),
-                        boxShadow: [BoxShadow(color: Colors.black,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 5)]
+                        boxShadow: [BoxShadow(color: Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 5)]
                     ),
                   child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
@@ -94,7 +95,7 @@ class _IntroPageState extends State<IntroPage> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50),
-                      boxShadow: [BoxShadow(color: Colors.lightGreenAccent,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
+                      boxShadow: [BoxShadow(color: Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
                     ),
                   child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
@@ -115,7 +116,7 @@ class _IntroPageState extends State<IntroPage> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.white),
                       borderRadius: BorderRadius.circular(50),
-                        boxShadow: [BoxShadow(color: Colors.blueGrey.shade200,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
+                        boxShadow: [BoxShadow(color:Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
                     ),
                   child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
