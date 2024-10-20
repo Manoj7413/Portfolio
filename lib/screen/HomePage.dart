@@ -10,8 +10,8 @@ import 'package:portfolio/widget/IntroPage.dart';
 import 'package:portfolio/widget/ProjectPage.dart';
 import 'package:portfolio/widget/ProjectWidget.dart';
 import 'package:video_player/video_player.dart';
-
 import '../widget/Carosel_Slider.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
@@ -62,15 +62,19 @@ class _HomePageState extends State<HomePage> {
                             ),
                             Padding(
                               padding:  EdgeInsets.fromLTRB(0.0, 100.0, 50.0,0.0),
-                              child:  ProjectWidget("Movie Streaming Application Build With Flutter And Firebase (Looking like Netflix)","project.png","Flutter Dart Firebase","ScreenTime","https://github.com/Manoj7413/Movie_App"),
+                              child:  ProjectWidget("Movie Streaming Application Build With Flutter And Firebase (Looking Like Netflix)","project.png","Flutter Dart Firebase","ScreenTime","https://github.com/Manoj7413/Movie_App"),
                             ),
                             Padding(
                               padding:  EdgeInsets.fromLTRB(50.0, 100.0, 0.0,0.0),
-                              child:  ProjectWidget2("Portfolio Website Builded With Android Studio And Firebase","project13.jpg","Android Studio Dart Firebase","Portfolio"),
+                              child:  ProjectWidget2("Successfully Builded A Food Recipe App with Dart flutter In Android Studio And Firebase","recipe1.png","Android Studio Dart Firebase","MealMania","https://github.com/Manoj7413/Portfolio"),
                             ),
                             Padding(
                               padding:  EdgeInsets.fromLTRB(0.0, 100.0, 50.0,0.0),
-                              child:  ProjectWidget("Build A Breakfast App With Flutter","project14.jpg","Flutter Dart","Break Fast App UI","https://github.com/Manoj7413/Breakfast_app"),
+                              child:  ProjectWidget("Portfolio Website Builded With Android Studio And Firebase","project13.jpg","Android Studio Dart Firebase","Portfolio","https://github.com/Manoj7413/Portfolio"),
+                            ),
+                            Padding(
+                              padding:  EdgeInsets.fromLTRB(50.0, 100.0, 0.0,0.0),
+                              child:  ProjectWidget2("Build A Breakfast App With Flutter","project14.jpg","Flutter Dart","Fork And Spoon","https://github.com/Manoj7413/Breakfast_app"),
                             ),
                             Padding(
                               padding:  EdgeInsets.fromLTRB(50.0, 25.0, 50.0,20.0),

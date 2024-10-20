@@ -2,8 +2,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:portfolio/model/Method.dart';
 
-
-
 class IntroPage extends StatefulWidget {
   @override
   _IntroPageState createState() => _IntroPageState();
@@ -45,64 +43,22 @@ class _IntroPageState extends State<IntroPage> {
                   child: GestureDetector(
                     onTap: (){
                       method.launchURL(
-                          "https://www.facebook.com/profile.php?id=100013215377464");
+                          "https://github.com/Manoj7413");
                     },
                     child: Container(
                       padding: EdgeInsets.all(5),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white30),
-                        borderRadius: BorderRadius.circular(50),
-                        boxShadow: [BoxShadow(color:  Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
+                          border: Border.all(color: Colors.white),
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: [BoxShadow(color: Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 5)]
                       ),
-                      child: Image.asset(
-                        "assets/facebook.png",
+                      child: Image(
                         width: max(MediaQuery.of(context).size.width*0.03,40),
                         height: max(MediaQuery.of(context).size.width*0.03,40),
+                        image: AssetImage("assets/github.png"),
                         fit: BoxFit.cover,
                       ),
                     ),
-                  ),
-                ),
-                SizedBox(height:20.0),
-                GestureDetector(
-                  onTap: (){
-                    method.launchURL(
-                        "https://github.com/Manoj7413");
-                  },
-                  child: Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white),
-                      borderRadius: BorderRadius.circular(50),
-                        boxShadow: [BoxShadow(color: Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 5)]
-                    ),
-                  child: Image(
-                    width: max(MediaQuery.of(context).size.width*0.03,40),
-                    height: max(MediaQuery.of(context).size.width*0.03,40),
-                    image: AssetImage("assets/github.png"),
-                    fit: BoxFit.cover,
-                  ),
-                  ),
-                ),
-                SizedBox(height:20.0),
-                GestureDetector(
-                  onTap: (){
-                    method.launchURL(
-                        "https://www.hackerrank.com/jadhavakshay0701");
-                  },
-                  child: Container(
-                    padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white),
-                      borderRadius: BorderRadius.circular(50),
-                      boxShadow: [BoxShadow(color: Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
-                    ),
-                  child: Image(
-                    width: max(MediaQuery.of(context).size.width*0.03,40),
-                    height: max(MediaQuery.of(context).size.width*0.03,40),
-                    image: AssetImage("assets/hackerrank.png"),
-                    fit: BoxFit.cover,
-                  ),
                   ),
                 ),
                 SizedBox(height:20.0),
@@ -114,18 +70,60 @@ class _IntroPageState extends State<IntroPage> {
                   child: Container(
                     padding: EdgeInsets.all(5),
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white),
-                      borderRadius: BorderRadius.circular(50),
+                        border: Border.all(color: Colors.white),
+                        borderRadius: BorderRadius.circular(50),
                         boxShadow: [BoxShadow(color:Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
                     ),
-                  child: Image(
+                    child: Image(
+                      width: max(MediaQuery.of(context).size.width*0.03,40),
+                      height: max(MediaQuery.of(context).size.width*0.03,40),
+                      image: AssetImage("assets/linkedin.png"),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                SizedBox(height:20.0),
+                GestureDetector(
+                  onTap: (){
+                    method.launchURL(
+                        "https://codeforces.com/profile/Kumharmanoj");
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.white),
+                      borderRadius: BorderRadius.circular(50),
+                      boxShadow: [BoxShadow(color: Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
+                    ),
+                    child: Image(
                     width: max(MediaQuery.of(context).size.width*0.03,40),
                     height: max(MediaQuery.of(context).size.width*0.03,40),
-                    image: AssetImage("assets/linkedin.png"),
+                    image: AssetImage("assets/hackerrank.png"),
                     fit: BoxFit.cover,
                   ),
                   ),
                 ),
+                SizedBox(height:20.0),
+                GestureDetector(
+                  onTap: (){
+                    method.launchURL(
+                    "https://www.instagram.com/mnuu1800/profilecard/?igsh=Z2g0amdlMmxubmNz");
+                    },
+                    child:Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white30),
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: [BoxShadow(color:  Colors.white24,offset: Offset(0.5,0.5),blurRadius: 10,spreadRadius: 3)]
+                      ),
+                      child: Image.asset(
+                        "assets/instagram.png",
+                        width: max(MediaQuery.of(context).size.width*0.03,40),
+                        height: max(MediaQuery.of(context).size.width*0.03,40),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
               ],
             ),
           ),

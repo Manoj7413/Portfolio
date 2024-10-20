@@ -42,26 +42,22 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                 children:[
                   Text(widget.title,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 45.0),),
                   SizedBox(height:50),
-                  Positioned(
-                      top: 70,
-                      left: 150,
-                      child: Container(
-                        width: MediaQuery.of(context).size.width*0.33,
-                      padding: EdgeInsets.all(8.0),
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(18.0),
-                        child: Text(widget.desc,style:TextStyle(color: Colors.white,fontSize:20.0,),),
-                      )),
-                      decoration: BoxDecoration(
-                        boxShadow: [BoxShadow(
-                          color: Colors.black54,
-                          blurRadius: 5.0,
-                        ),],
-                      color: Color(0xff172943),
-                      borderRadius: BorderRadius.all(Radius.circular(10)), 
-                      ),
-                    ),
+                  Container(
+                    width: MediaQuery.of(context).size.width*0.33,
+                  padding: EdgeInsets.all(8.0),
+                  child: Center(child: Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Text(widget.desc,style:TextStyle(color: Colors.white,fontSize:20.0,),),
+                  )),
+                  decoration: BoxDecoration(
+                    boxShadow: [BoxShadow(
+                      color: Colors.black54,
+                      blurRadius: 5.0,
+                    ),],
+                  color: Color(0xff172943),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
+                                      ),
                   SizedBox(height: 20.0,),
                   Container(
                     padding: EdgeInsets.all(8.0),
@@ -128,26 +124,22 @@ class _ProjectWidget2State extends State<ProjectWidget2> {
                 children:[
                   Text(widget.title,style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 45.0),),
                   SizedBox(height:50),
-                  Positioned(
-                      top: 70,
-                      right: 150,
-                      child: Container(
-                        width: MediaQuery.of(context).size.width*0.33,
-                      padding: EdgeInsets.all(8.0),
-                      child: Center(child: Padding(
-                        padding: const EdgeInsets.all(18.0),
-                        child: Text(widget.desc,style:TextStyle(color: Colors.white,fontSize:20.0,),),
-                      )),
-                      decoration: BoxDecoration(
-                        boxShadow: [BoxShadow(
-                          color: Colors.black54,
-                          blurRadius: 5.0,
-                        ),],
-                      color: Color(0xff172943),
-                      borderRadius: BorderRadius.all(Radius.circular(10)), 
-                      ),
-                    ),
+                  Container(
+                    width: MediaQuery.of(context).size.width*0.33,
+                  padding: EdgeInsets.all(8.0),
+                  child: Center(child: Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Text(widget.desc,style:TextStyle(color: Colors.white,fontSize:20.0,),),
+                  )),
+                  decoration: BoxDecoration(
+                    boxShadow: [BoxShadow(
+                      color: Colors.black54,
+                      blurRadius: 5.0,
+                    ),],
+                  color: Color(0xff172943),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
                   ),
+                                      ),
                   SizedBox(height: 20.0,),
                   Container(
                     padding: EdgeInsets.all(8.0),
